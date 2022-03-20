@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav id="contactNav" class="nav">
+            <ul id="navigationList">
+                <li><a href="index.html" class="navitem">My CV</a></li>
+                <li><a href="projects.html" class="navitem">My Projects</a></li>
+                <li><a href="contact.html" class="navitem">Contact Me</a></li>
+                <li><a href="blog.html" class="navitem">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <form id="contactForm" action="contactMe.html" method="post" enctype="multipart/form-data">
+
+            <label for="purpose">Purpose of contact:</label> <br>
+            <select name="purpose" id="purpose">
+                <option value="business">Business</option>
+                <option value="Personal">Personal</option>
+            </select> <br>
+    
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"> <br>
+    
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name="email"> <br>
+    
+            <label for="phoneNumber"> Phone number:</label> <br>
+            <input type="number" id="phoneNumber" name="phoneNumber"> <br>
+    
+            <p>Preferred contact method:</p>
+            <input type="radio" name="preferedContactMethod" value="email">Email
+            <input type="radio" name="preferedContactMethod" value="phone">Phone
+            <br>
+
+            <br>
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+            <br>
+
+            <label for="textArea">Message:</label> <br>
+            <textarea name="textArea" id="textArea" cols="60" rows="10" placeholder="type your message"></textarea>
+    
+            <br>        
+            <input type="reset" value="clear">
+            <input type="submit" value="submit">
+        </form>
+    </main>
+
+    <footer> <hr> © Trung Tran s3891724</footer>
+</body>
+</html>
